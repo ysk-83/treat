@@ -8,8 +8,8 @@
 	<!-- <style>body{opacity: 0;}</style> -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap&_v=20231030143538" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.min.css?_v=20231030143538">
+	<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap&_v=20250524121908" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250524121908">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -20,7 +20,7 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header data-lp class="header">
 			<div class="header__container">
 				<a href="index.html" class="header__logo">
 					<picture>
@@ -97,13 +97,13 @@
 										<details data-open class="filter-catalog__item price-filter">
 											<summary class="filter-catalog__subtitle price-filter__title">Price
 											</summary>
-											<div data-range class="price-filter__body">
+											<div class="price-filter__body">
 												<div class="price-filter__inputs">
-													<input data-range-from="0" autocomplete="off" value="500" type="text" name="form[]" data-error="Ошибка" placeholder="" class="price-filter__input">
+													<input id="price-start" autocomplete="off" value="500" type="text" name="form[]" data-error="Ошибка" placeholder="" class="price-filter__input">
 													<span></span>
-													<input data-range-to="5000" autocomplete="off" value="1000" type="text" name="form[]" data-error="Ошибка" placeholder="" class="price-filter__input">
+													<input id="price-end" autocomplete="off" value="1000" type="text" name="form[]" data-error="Ошибка" placeholder="" class="price-filter__input">
 												</div>
-												<div data-range-item class="price-filter__range"></div>
+												<div data-range class="price-filter__range"></div>
 											</div>
 										</details>
 
@@ -212,7 +212,7 @@
 										</div>
 										<div class="product-card__rewievs">(6) reviews</div>
 									</div>
-									<div class="product-card__img-ibg"><picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.png" alt=""></picture></div>
+									<div class="product-card__img-ibg"><picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.png" alt="card image" loading="lazy"></picture></div>
 									<div class="product-card__actions">
 										<a href="#" class="product-card__view btn">Buy</a>
 										<a href="product.html" class="product-card__buy btn btn_invert">VIEW MODEL</a>
@@ -234,7 +234,7 @@
 										</div>
 										<div class="product-card__rewievs">(16) reviews</div>
 									</div>
-									<div class="product-card__img-ibg"><picture><source srcset="img/product/02.webp" type="image/webp"><img src="img/product/02.png" alt=""></picture></div>
+									<div class="product-card__img-ibg"><picture><source srcset="img/product/02.webp" type="image/webp"><img src="img/product/02.png" alt="card image" loading="lazy"></picture></div>
 									<div class="product-card__actions">
 										<a href="#" class="product-card__view btn">Buy</a>
 										<a href="#" class="product-card__buy btn btn_invert">VIEW MODEL</a>
@@ -256,7 +256,7 @@
 										</div>
 										<div class="product-card__rewievs">(16) reviews</div>
 									</div>
-									<div class="product-card__img-ibg"><picture><source srcset="img/product/03.webp" type="image/webp"><img src="img/product/03.png" alt=""></picture></div>
+									<div class="product-card__img-ibg"><picture><source srcset="img/product/03.webp" type="image/webp"><img src="img/product/03.png" alt="card image" loading="lazy"></picture></div>
 									<div class="product-card__actions">
 										<a href="#" class="product-card__view btn">Buy</a>
 										<a href="#" class="product-card__buy btn btn_invert">VIEW MODEL</a>
@@ -278,7 +278,7 @@
 										</div>
 										<div class="product-card__rewievs">(16) reviews</div>
 									</div>
-									<div class="product-card__img-ibg"><picture><source srcset="img/product/04.webp" type="image/webp"><img src="img/product/04.png" alt=""></picture></div>
+									<div class="product-card__img-ibg"><picture><source srcset="img/product/04.webp" type="image/webp"><img src="img/product/04.png" alt="card image" loading="lazy"></picture></div>
 									<div class="product-card__actions">
 										<a href="#" class="product-card__view btn">Buy</a>
 										<a href="#" class="product-card__buy btn btn_invert">VIEW MODEL</a>
@@ -300,7 +300,7 @@
 										</div>
 										<div class="product-card__rewievs">(16) reviews</div>
 									</div>
-									<div class="product-card__img-ibg"><picture><source srcset="img/product/05.webp" type="image/webp"><img src="img/product/05.png" alt=""></picture></div>
+									<div class="product-card__img-ibg"><picture><source srcset="img/product/05.webp" type="image/webp"><img src="img/product/05.png" alt="card image" loading="lazy"></picture></div>
 									<div class="product-card__actions">
 										<a href="#" class="product-card__view btn">Buy</a>
 										<a href="#" class="product-card__buy btn btn_invert">VIEW MODEL</a>
@@ -322,7 +322,7 @@
 										</div>
 										<div class="product-card__rewievs">(16) reviews</div>
 									</div>
-									<div class="product-card__img-ibg"><picture><source srcset="img/product/06.webp" type="image/webp"><img src="img/product/06.png" alt=""></picture></div>
+									<div class="product-card__img-ibg"><picture><source srcset="img/product/06.webp" type="image/webp"><img src="img/product/06.png" alt="card image" loading="lazy"></picture></div>
 									<div class="product-card__actions">
 										<a href="#" class="product-card__view btn">Buy</a>
 										<a href="#" class="product-card__buy btn btn_invert">VIEW MODEL</a>
@@ -338,7 +338,7 @@
 			<div class="footer__left-side">
 				<div class="footer__container">
 					<div class="footer__body">
-						<div class="footer__logo"><picture><source srcset="img/icons/logo-white.webp" type="image/webp"><img src="img/icons/logo-white.png" alt=""></picture></div>
+						<div class="footer__logo"><picture><source srcset="img/icons/logo-white.webp" type="image/webp"><img src="img/icons/logo-white.png" alt="logo" loading="lazy"></picture></div>
 						<div class="footer__wrap">
 							<div class="footer__column">
 								<div class="footer__title">About us</div>
@@ -373,7 +373,7 @@
 							</div>
 							<div class="footer__support support-footer">
 								<div class="support-footer__item">
-									<div class="support-footer__img"><picture><source srcset="img/icons/phone.webp" type="image/webp"><img src="img/icons/phone.png" alt=""></picture></div>
+									<div class="support-footer__img"><picture><source srcset="img/icons/phone.webp" type="image/webp"><img src="img/icons/phone.png" alt="image" loading="lazy"></picture></div>
 									<div class="support-footer__body">
 										<div class="support-footer__tel">1-800-322-8546</div>
 										<div class="support-footer__schedule">Monday-Friday 9:00-18:00</div>
@@ -408,11 +408,11 @@
 					</div>
 					<a href="#" class="footer__btn btn btn_green">Find your solution</a>
 				</div>
-				<picture><source srcset="img/footer/bg.webp" type="image/webp"><img src="img/footer/bg.jpg" alt=""></picture>
+				<picture><source srcset="img/footer/bg.webp" type="image/webp"><img src="img/footer/bg.jpg" alt="footer background" loading="lazy"></picture>
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20231030143538"></script>
+	<script src="js/app.min.js?_v=20250524121908"></script>
 	<div id="popup__send-form" aria-hidden="true" class="popup popup_form">
 		<div class="popup__wrapper">
 			<div class="popup__content">
